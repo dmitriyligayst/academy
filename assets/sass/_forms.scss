@@ -1,0 +1,73 @@
+@import "variables";
+
+body {
+	.wrapper {
+		align-items: center;
+		justify-content: center;
+	}
+	.registration-form,
+	.login-form {
+		min-width: 320px;
+		padding: 26px 24px 34px;
+		font-weight: 400;
+		overflow: hidden;
+		background: $white;
+		border: 1px solid $dark-gray;
+		box-shadow: 0 1px 3px rgba($black, 0.04%);
+		a {
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 6px;
+		}
+	}
+	label {
+		display: block;
+		margin-bottom: 20px;
+		span {
+			display: block;
+			margin-bottom: 7px;
+		}
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="text"] {
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: 3px;
+		border: 1px solid $dark-gray;
+		padding: 10px 15px;
+		line-height: 1.5;
+		font-weight: 500;
+		font-size: 14px;
+	}
+	input[type="submit"] {
+		float: right;
+		background: $blue;
+		border: 1px solid $blue;
+		border-radius: 3px;
+		text-decoration: none;
+		min-height: 32px;
+		line-height: 2.30769231;
+		text-shadow: none;
+		padding: 0 12px;
+		font-size: 13px;
+		color: $white;
+		cursor: pointer;
+		&:hover {
+			background-color: $dark-blue;
+		}
+	}
+	.registration-notice {
+		margin: 0 0 auto;
+		padding: 20px 30px;
+		background-color: $green;
+		box-shadow: 0 1px 3px rgba($black, 0.04%);
+		font-weight: 500;
+		font-size: 16px;
+		color: $white;
+		&.error {
+			background-color: $red;
+		}
+	}
+}
